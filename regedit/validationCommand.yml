@@ -4,7 +4,7 @@
   tasks:
 
   - name: Save the result of 'whoami' in 'whoami_out'
-    ansible.windows.win_command: reg query HKCU\Software\MyCompany
+    ansible.windows.win_command: reg query HKCU\Software\MyCompanyr
     register: hello
   
   - debug: msg="{{ hello.stdout }}"
